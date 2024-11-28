@@ -24,7 +24,7 @@ const Login = () => {
         setError('');
 
         try {
-            const response = await axios.post('/auth/login', formData);
+            const response = await axios.post('https://tic-payeasy-trial-server.onrender.com/api/auth/login', formData);
             
             // Store tokens in localStorage
             localStorage.setItem('token', response.data.token);

@@ -26,7 +26,7 @@ const Signup = () => {
         setError('');
 
         try {
-            const response = await axios.post('/auth/register', formData);
+            const response = await axios.post('https://tic-payeasy-trial-server.onrender.com/api/auth/register', formData);
             
             // Optional: Automatically log in after signup
             const loginResponse = await axios.post('/api/auth/login', {

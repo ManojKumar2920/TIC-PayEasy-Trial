@@ -21,7 +21,7 @@ const Dashboard = () => {
                 }
 
                 // Fetch user profile
-                const response = await axios.get('/me', {
+                const response = await axios.get('https://tic-payeasy-trial-server.onrender.com/api/me', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
