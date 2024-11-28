@@ -31,7 +31,7 @@ const Register = () => {
             const response = await axios.post('https://tic-payeasy-trial-server.onrender.com/api/auth/register', formData);
             
             // Optional: Automatically log in after signup
-            const loginResponse = await axios.post('/api/auth/login', {
+            const loginResponse = await axios.post('https://tic-payeasy-trial-server.onrender.com/api/auth/login', {
                 email: formData.email,
                 password: formData.password
             });
