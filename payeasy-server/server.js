@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: 'https://tic-payeasy.netlify.app', 
+    origin: 'https://tic-payeasy.vercel.app', 
     credentials: true
   }));
 app.use(express.json());
