@@ -21,7 +21,7 @@ const Dashboard = () => {
                 }
 
                 // Fetch user profile
-                const response = await axios.get('/api/me', {
+                const response = await axios.get('/me', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
